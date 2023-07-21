@@ -4,7 +4,7 @@ import ItemSelector from './ItemSelector.js';
 const App = () => {
   return (
     <div>
-      <h1>Item Selector</h1>
+      <h1>Unique Selector</h1>
       <ItemSelector />
     </div>
   );
