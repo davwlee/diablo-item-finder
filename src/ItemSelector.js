@@ -365,7 +365,14 @@ const ItemSelector = () => {
       <p>Dungeon Location: {selectedItem.dungeon}</p>
       <p>Season 1 Nightmare Dungeons: {selectedItem.nmd}</p>
       <p>{selectedItem.img}</p>
-      <p>Bug reports to me at Twitter @DaveWeedle - Shout out to my homie Laz. You're a good friend.</p>
+      <p>Please report bugs to me at Twitter @DaveWeedle - Shout out to my homie Laz. You're a good friend.</p>
+      <p>TO DO</p>
+      <ul>
+        <li>Add new season uniques</li>
+        <li>Update CSS</li>
+        <li>Research better dungeons to farm for each</li>
+        <li>Suggestions welcomed!</li>
+      </ul>
     </div>
   );
 };
