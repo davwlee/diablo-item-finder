@@ -351,7 +351,7 @@ const ItemSelector = () => {
 
   return (
     <div>
-      <label htmlFor="itemSelect">Select a unique item: </label>
+      <label htmlFor="itemSelect">Select an item:</label>
       <select id="itemSelect" onChange={handleItemChange} value={selectedItem.name}>
         {itemsData.map((item) => (
           <option key={item.name} value={item.name}>{item.name}</option>
@@ -365,12 +365,13 @@ const ItemSelector = () => {
       <p>Dungeon Location: {selectedItem.dungeon}</p>
       <p>Season 1 Nightmare Dungeons: {selectedItem.nmd}</p>
       <p>{selectedItem.img}</p>
-      <p>Please report bugs to me at Twitter <a href="https://www.twitter.com/@DaveWeedle">@DaveWeedle</a> or <a href="https://www.reddit.com/user/davweeee">Reddit </a> - Shout out to my homie Laz. You're a good friend.</p>
+      <p>Please report bugs to me at Twitter @DaveWeedle - Shout out to my homie Laz. You're a good friend.</p>
       <p>TO DO</p>
       <ul>
         <li>Add new season uniques</li>
+        <li>Update CSS</li>
         <li>Research better dungeons to farm for each</li>
-        <li>World Domination</li>
+        <li>Suggestions welcomed!</li>
       </ul>
     </div>
   );

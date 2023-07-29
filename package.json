@@ -34,20 +34,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "description": "[![Netlify Status](https://api.netlify.com/api/v1/badges/bc4d9d8c-cf7d-4109-b6b8-d6d1d5635ff1/deploy-status)](https://app.netlify.com/sites/merry-salamander-9550c5/deploys)",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/davwlee/diablo-item-finder.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/davwlee/diablo-item-finder/issues"
-  },
-  "homepage": "https://github.com/davwlee/diablo-item-finder",
-  "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }
