@@ -12,6 +12,11 @@ body {
   font-size: 20px;
   border: 1px solid black;
   border-radius: 10px;
+  background-image: url(https://assets.maxroll.gg/wordpress/D4_News_Lilith_2-900x300.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.603);
 }
 
 code {
