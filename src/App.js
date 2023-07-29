@@ -3,9 +3,13 @@ import ItemSelector from './ItemSelector.js';
 
 const App = () => {
   return (
-    <div>
+    <div className="App">
+    <header className="App-header">
+      </header>
+      <section className="Unique-Selector">
       <h1>Unique Selector</h1>
       <ItemSelector />
+      </section>
     </div>
   );
 };
