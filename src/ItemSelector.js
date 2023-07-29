@@ -372,7 +372,6 @@ const ItemSelector = () => {
         <li>Research better dungeons to farm for each</li>
         <li>World Domination</li>
       </ul>
-      <h1></h1>
     </div>
   );
 };
