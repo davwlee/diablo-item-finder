@@ -345,31 +345,54 @@ const ItemSelector = () => {
 
   const handleItemChange = (event) => {
     const selectedItemName = event.target.value;
-    const selected = itemsData.find(item => item.name === selectedItemName);
+    const selected = itemsData.find((item) => item.name === selectedItemName);
     setSelectedItem(selected);
   };
 
   return (
-    <div>
-      <label htmlFor="itemSelect">Select an item: </label>
-      <select id="itemSelect" onChange={handleItemChange} value={selectedItem.name}>
-        {itemsData.map((item) => (
-          <option key={item.name} value={item.name}>{item.name}</option>
-        ))}
-      </select>
-
+    <div className="container">
+      <div className="itemselector">
+        <label htmlFor="itemSelect">Select an item </label>
+        <p></p>
+        <select
+          className="form-control"
+          id="itemSelect"
+          onChange={handleItemChange}
+          value={selectedItem.name}
+        >
+          {itemsData.map((item) => (
+            <option key={item.name} value={item.name}>
+              {item.name}
+            </option>
+          ))}
+        </select>
+      </div>
+      
+    <div class="itemstuff">
       <h2>Selected Item:</h2>
-      <p>Name: {selectedItem.name}</p>
-      <p>Type: {selectedItem.type}</p>
-      <p>Monsters: {selectedItem.monsters}</p>
-      <p>Dungeon Location: {selectedItem.dungeon}</p>
-      <p>Season 1 Nightmare Dungeons: {selectedItem.nmd}</p>
-      <p>{selectedItem.img}</p>
-      <p>Shout out to my homie Laz. You're a good friend. Please report bugs to me on Twitter <a href="https://www.twitter.com/@DaveWeedle">@DaveWeedle</a></p>
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3561487144258496"
-     crossorigin="anonymous"></script>
+      <p>
+        <strong>Item Type:</strong> {selectedItem.name}
+      </p>
+      <p>
+        <strong>Monsters:</strong> {selectedItem.monsters}
+      </p>
+      <p>
+        <strong>Dungeon Location:</strong> {selectedItem.dungeon}
+      </p>
+      <p>
+        <strong>Season 1 Nightmare Dungeons:</strong> {selectedItem.nmd}
+      </p>
+      <p>
+        {selectedItem.img}
+      </p>
+      <p>
+        Shout out to my homie Laz. You're a good friend. Please report bugs to me on Twitter{' '}
+        <a href="https://www.twitter.com/@DaveWeedle">@DaveWeedle</a>
+      </p>
+      </div>
     </div>
   );
 };
 
 export default ItemSelector;
+
