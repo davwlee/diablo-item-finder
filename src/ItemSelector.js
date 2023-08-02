@@ -371,7 +371,7 @@ const ItemSelector = () => {
     <div class="itemstuff">
       <h2>Selected Item:</h2>
       <p>
-        <strong>Item Type:</strong> {selectedItem.name}
+        <strong>Unique:</strong> {selectedItem.name}
       </p>
       <p>
         <strong>Monsters:</strong> {selectedItem.monsters}
